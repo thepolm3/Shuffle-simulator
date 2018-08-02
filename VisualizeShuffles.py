@@ -100,7 +100,8 @@ for name, shuffle, fps, number_of_shuffles, color in shuffles:
 
 				log(f'Creating column {i} of pixels', 4)
 				pixel = PIXELS_PER_CARD*i
-				img[:, pixel:pixel + PIXELS_PER_CARD] = color_map(deck[i], DECK_SIZE, color)
+				r, g, b = color_map(deck[i], DECK_SIZE, color)
+				img[:, pixel:pixel + PIXELS_PER_CARD] = (b, g, r)
 
 			log('Adding text to frame', 3)
 			cv2.putText(img, f"{n+1}", (10,IMG_HEIGHT - 10), **TEXT_STYLE)
