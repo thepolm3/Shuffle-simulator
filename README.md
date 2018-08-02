@@ -9,7 +9,7 @@ view the shuffles here:
 
 View the correlation graphs [here](https://imgur.com/gallery/GONMHJo)
 
-#Files
+# Files
 Shuffles.py contains three shuffles implemented in python
 
 VisualizeShuffles.py does the following:
